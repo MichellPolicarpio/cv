@@ -399,7 +399,9 @@ nav ul li a:hover::after {
 
 /* Botones de proyectos */
 .btn-proyecto {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     margin-top: 8px;
     font-size: 1.05rem;
     padding: 12px 28px;
@@ -414,6 +416,19 @@ nav ul li a:hover::after {
     box-shadow: 0 2px 8px rgba(255, 72, 4, 0.08);
     cursor: pointer;
     text-align: center;
+    justify-content: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-proyecto i {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    transition: opacity 0.2s;
 }
 
 .btn-proyecto:hover {
@@ -423,11 +438,26 @@ nav ul li a:hover::after {
     box-shadow: 0 4px 16px rgba(255, 72, 4, 0.18);
 }
 
+.btn-proyecto:hover i {
+    opacity: 1;
+}
+
 /* Estructura de secciones */
 section {
-    padding: 80px 10%;
+    padding: 40px 10% 80px 10%;
     margin-bottom: var(--section-spacing);
-    scroll-margin-top: 120px;
+    scroll-margin-top: 20px;
+}
+
+/* Reducir padding superior para proyectos y contacto */
+#proyectos {
+    background-color: var(--color-bg);
+    padding: 20px 10% 80px 10%;
+}
+
+#contacto {
+    background-color: var(--color-bg-secondary);
+    padding: 20px 10% 80px 10%;
 }
 
 section:last-of-type {
@@ -535,10 +565,6 @@ section h2::after {
 }
 
 /* Sección Proyectos */
-#proyectos {
-    background-color: var(--color-bg);
-}
-
 .proyectos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -634,8 +660,15 @@ section h2::after {
     font-weight: 500;
     margin-right: 7px;
     margin-bottom: 5px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     transition: background 0.2s, color 0.2s;
+}
+
+.proyecto .tecnologias span i {
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
 
 .proyecto .tecnologias span:hover {
@@ -643,16 +676,11 @@ section h2::after {
     color: #fff;
 }
 
-/* Sección Contacto */
-#contacto {
-    background-color: var(--color-bg-secondary);
-    text-align: center;
-    border-radius: 10px;
-    padding: 70px 8% 80px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    margin-bottom: 0;
+.proyecto .tecnologias span:hover i {
+    opacity: 1;
 }
 
+/* Sección Contacto */
 #contacto h2 {
     position: relative;
     display: inline-block;
