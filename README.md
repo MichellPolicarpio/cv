@@ -7,7 +7,7 @@
 
 ## 🚀 Descripción
 
-Portfolio profesional de Michell Policarpio, desarrollador Full Stack especializado en desarrollo iOS, análisis de datos y soluciones web. El sitio presenta un diseño moderno y responsivo con animaciones suaves y una experiencia de usuario optimizada.
+CV web de Michell Policarpio, desarrollador Full Stack especializado en desarrollo de aplicaciones multiplataforma, análisis de datos y soluciones web. El sitio presenta un diseño moderno y responsivo con animaciones suaves y una experiencia de usuario optimizada.
 
 **🌐 [Ver Portfolio en Vivo](https://michellpolicarpio.github.io/cv/)**
 
