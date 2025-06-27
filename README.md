@@ -1,20 +1,28 @@
 # Portfolio de Michell Policarpio
 
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 ## 🚀 Descripción
 
 Portfolio profesional de Michell Policarpio, desarrollador Full Stack especializado en desarrollo iOS, análisis de datos y soluciones web. El sitio presenta un diseño moderno y responsivo con animaciones suaves y una experiencia de usuario optimizada.
 
+**🌐 [Ver Portfolio en Vivo](https://michellpolicarpio.github.io/cv/)**
+
 ## ✨ Características
 
 - **Logo elegante**: El logo principal es el texto "Policarpio" con tipografía Playfair Display
-- **Foto de perfil destacada**: Imagen en círculo animado en la portada (`assets/img/profile.jpg`)
+- **Foto de perfil destacada**: Imagen en círculo animado en la portada
 - **Diseño Moderno**: Interfaz oscura con acentos naranjas
 - **Totalmente Responsivo**: Optimizado para dispositivos móviles y desktop
 - **Animaciones Suaves**: Efectos de scroll y transiciones fluidas
 - **Efecto de Cursor**: Luz difusa naranja que sigue al cursor
 - **Menú Móvil**: Navegación hamburguesa para dispositivos móviles
-- **Formulario de Contacto**: Funcional con procesamiento PHP
+- **Formulario de Contacto**: Funcional con integración de email nativo
 - **SEO Optimizado**: Metadatos y estructura semántica
+- **GitHub Pages Ready**: Optimizado para hosting estático
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -25,17 +33,16 @@ Portfolio profesional de Michell Policarpio, desarrollador Full Stack especializ
 - **Font Awesome**: Iconografía
 - **Google Fonts**: Tipografías Poppins, Roboto y Playfair Display
 
-### Backend
-- **PHP**: Procesamiento del formulario de contacto
-- **MySQL**: Base de datos (opcional)
+### Hosting
+- **GitHub Pages**: Hosting estático gratuito
+- **HTTPS**: Certificado SSL automático
 
 ## 📁 Estructura del Proyecto
 
 ```
-cv-website-main/
+cv/
 ├── index.html              # Página principal
 ├── styles.css              # Estilos principales
-├── main.js                 # JavaScript principal
 ├── assets/
 │   ├── img/
 │   │   ├── profile.jpg     # Foto de perfil en portada
@@ -46,13 +53,8 @@ cv-website-main/
 │       ├── menu.js         # Funcionalidad del menú móvil
 │       ├── scroll-animations.js  # Animaciones de scroll
 │       └── main.js         # Efectos adicionales
-├── php/
-│   └── procesar_formulario.php  # Procesamiento del formulario
 ├── proyectos/
-│   ├── gestion-datos.html  # Página del proyecto de gestión de datos
-│   ├── app-ios.html        # Página del proyecto iOS
-│   ├── plataforma-analisis.html  # Página de la plataforma web
-│   └── gestion-academica.html    # Página del sistema académico
+│   └── gestion-datos.html  # Página del proyecto de gestión de datos
 └── README.md
 ```
 
@@ -77,10 +79,10 @@ cv-website-main/
 ### 4. Proyectos
 - Tarjetas de proyectos con hover effects
 - Tecnologías utilizadas
-- Enlaces a páginas detalladas
+- Enlaces a repositorios de GitHub
 
 ### 5. Contacto
-- Formulario funcional
+- Formulario funcional con integración de email
 - Beneficios de trabajar juntos
 - Información de contacto
 
@@ -92,30 +94,24 @@ cv-website-main/
 
 ## 🚀 Instalación y Uso
 
-### Requisitos
-- Servidor web con soporte PHP (Apache, Nginx, etc.)
-- PHP 7.4 o superior
-
-### Pasos de Instalación
+### Para Desarrollo Local
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/tu-usuario/cv-website-main.git
-   cd cv-website-main
+   git clone https://github.com/MichellPolicarpio/cv.git
+   cd cv
    ```
 
-2. **Configurar el servidor web**
-   - Colocar los archivos en el directorio web del servidor
-   - Asegurar que PHP esté habilitado
+2. **Abrir en el navegador**
+   - Simplemente abre `index.html` en tu navegador
+   - O usa un servidor local como Live Server (VS Code)
 
-3. **Configurar el formulario de contacto**
-   - Editar `php/procesar_formulario.php` con tu email
-   - Verificar permisos de escritura para el log
+### Para GitHub Pages
 
-4. **Personalizar el contenido**
-   - Actualizar información personal en `index.html`
-   - Cambiar foto de perfil en `assets/img/profile.jpg`
-   - Modificar colores en `styles.css` (variables CSS)
+El sitio está configurado automáticamente para GitHub Pages:
+- **URL**: https://michellpolicarpio.github.io/cv/
+- **Rama**: `main`
+- **HTTPS**: Habilitado automáticamente
 
 ## 🎯 Personalización
 
@@ -133,14 +129,9 @@ Edita las variables CSS en `styles.css`:
 
 ### Actualizar Información
 - **Datos personales**: Editar `index.html`
-- **Proyectos**: Modificar sección de proyectos y crear páginas individuales
+- **Proyectos**: Modificar sección de proyectos
 - **Contacto**: Actualizar información en footer y formulario
 - **Foto de perfil**: Cambiar `assets/img/profile.jpg`
-
-### Añadir Nuevos Proyectos
-1. Crear nueva página en `proyectos/`
-2. Añadir tarjeta en la sección de proyectos
-3. Actualizar navegación del footer
 
 ## 📱 Responsividad
 
@@ -165,23 +156,17 @@ El sitio está optimizado para:
 
 ### Formulario de Contacto
 - Validación en tiempo real
-- Envío asíncrono
-- Mensajes de respuesta
-- Protección anti-spam
+- Integración con cliente de email nativo
+- Mensajes de confirmación
+- Pre-llenado automático del mensaje
 
-## 📧 Configuración del Formulario
+## 📧 Formulario de Contacto
 
-El formulario de contacto requiere:
-
-1. **Servidor con PHP habilitado**
-2. **Configuración de email** en `php/procesar_formulario.php`
-3. **Permisos de escritura** para el archivo de log
-
-### Configuración de Email
-Editar línea 8 en `php/procesar_formulario.php`:
-```php
-$para = 'tu-email@gmail.com';
-```
+El formulario utiliza la funcionalidad `mailto:` nativa del navegador:
+- **Ventaja**: No requiere servidor backend
+- **Funcionalidad**: Abre automáticamente el cliente de email del usuario
+- **Datos**: Pre-rellena nombre, email y mensaje del formulario
+- **Compatibilidad**: Funciona en todos los navegadores modernos
 
 ## 🌟 Características Destacadas
 
@@ -192,22 +177,34 @@ $para = 'tu-email@gmail.com';
 - **SEO Optimizado**: Estructura semántica y metadatos
 - **Accesibilidad**: Navegación por teclado y lectores de pantalla
 - **Performance**: Carga optimizada y lazy loading
+- **GitHub Pages**: Hosting gratuito y automático
+
+## 📊 Proyectos Destacados
+
+- **MobiPass**: Aplicación móvil multiplataforma para gestión de pasajes
+- **Detección de Sargazo con IA**: Proyecto de machine learning para detección automática
+- **Juegos para Apple Watch**: Colección de juegos optimizados para watchOS
+- **Sistema de Gestión Académica**: Aplicación de escritorio con MongoDB
+- **Juego Avioneta en OpenGL**: Videojuego desarrollado en C++
+
+## 🎓 Educación y Certificaciones
+
+- **Ingeniería en Informática**: Universidad Veracruzana (2021-2026)
+- **Samsung Innovation Campus**: Ciencia de Datos
+- **NASA Space Apps Challenge 2024**: Participante
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+Este proyecto está bajo la Licencia MIT.
 
 ## 👨‍💻 Autor
 
 **Michell Policarpio**
-- Email: michellpolicarpio@gmail.com
-- LinkedIn: [linkedin.com/in/michell-policarpio](https://www.linkedin.com/in/michell-alexis-policarpio-moran-332568348/)
-- GitHub: [github.com/MichellPolicarpio](https://github.com/MichellPolicarpio)
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, abre un issue o pull request para sugerencias y mejoras.
+- 📧 Email: michellpolicarpio@gmail.com
+- 💼 LinkedIn: [linkedin.com/in/michell-policarpio](https://www.linkedin.com/in/michell-alexis-policarpio-moran-332568348/)
+- 🐙 GitHub: [github.com/MichellPolicarpio](https://github.com/MichellPolicarpio)
+- 📱 Teléfono: +52 229 136 0054
 
 ---
 
-**Nota**: Este portfolio está inspirado en el diseño de Federico Egea, adaptado y personalizado para Michell Policarpio.
+⭐ **Si te gusta este portfolio, ¡déjame una estrella en GitHub!**
