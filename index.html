@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michell Policarpio - Desarrollador Full Stack</title>
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Devicon para iconos de tecnologías -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="cursor-effect">
+    <header>
+        <div class="logo">
+            <span class="logo-text">Policarpio</span>
+        </div>
+        <div class="menu-toggle" id="mobile-menu" aria-label="Botón de menú">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav aria-label="Menú principal" id="main-nav">
+            <ul>
+            <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+            <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hola, soy <span style="color: var(--color-primary);">Michell Policarpio</span></h1>
+                    <p>Desarrollador Full Stack | Ingeniero en Informática</p>
+                    <div class="hero-btn-container">
+                        <a href="#proyectos" class="btn">Ver mis proyectos <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                            </div>
+                <div class="hero-image">
+                    <div class="profile-circle">
+                        <img src="assets/img/profile.jpg" alt="Michell Policarpio" class="profile-img">
+                        <div class="profile-glow"></div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <section id="sobre-mi">
+        <div class="container">
+            <h2 class="fade-in-up">Sobre mí</h2>
+            <p class="fade-in-up delay-200 delay-100">Soy un desarrollador apasionado por la tecnología y la innovación. Estudiante de Ingeniería en Informática en la Universidad Veracruzana (2021-2026), graduado del programa Samsung Innovation Campus en Ciencia de Datos, y participante del NASA Space Apps Challenge 2024. Me especializo en desarrollo full stack, análisis de datos y creación de aplicaciones móviles para el ecosistema Apple. Mi enfoque se centra en escribir código limpio y eficiente, siguiendo las mejores prácticas y metodologías ágiles.</p>
+            <div class="skills">
+                <div class="skill scale-in delay-0 delay-100">C/C++</div>
+                <div class="skill scale-in delay-100 delay-200">Python</div>
+                <div class="skill scale-in delay-200 delay-300">Java</div>
+                <div class="skill scale-in delay-300 delay-400">HTML5/CSS3</div>
+                <div class="skill scale-in delay-400 delay-500">JavaScript</div>
+                <div class="skill scale-in delay-500 delay-600">MySQL</div>
+                <div class="skill scale-in delay-600 delay-700">PostgreSQL</div>
+                <div class="skill scale-in delay-700 delay-800">MongoDB</div>
+                <div class="skill scale-in delay-800 delay-900">Swift</div>
+                </div>
+            </div>
+        </section>
+
+    <section id="proyectos">
+            <div class="container">
+            <h2 class="fade-in-up appear">Mis Proyectos</h2>
+            <div class="proyectos-grid">
+                <div class="proyecto fade-in-up delay-0 delay-200 appear">
+                    <h3>MobiPass - Gestión de Pasajes</h3>
+                    <p>Aplicación móvil multiplataforma desarrollada en Flutter que permite a los usuarios gestionar sus pasajes de autobús de manera eficiente y segura. Incluye backend robusto en Node.js.</p>
+                    <div class="tecnologias">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="https://github.com/MichellPolicarpio/MobiPass" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                </div>
+                <div class="proyecto fade-in-up delay-200 delay-400 appear">
+                    <h3>Calendario de Adviento Digital</h3>
+                    <p>Proyecto web de calendario de adviento digital diseñado como un regalo especial. Cada día se desvela una nueva sorpresa en forma de "cupón" o mensaje personalizado.</p>
+                    <div class="tecnologias">
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Web APIs</span>
+                    </div>
+                    <a href="https://github.com/MichellPolicarpio/CalendarioDeAdviento" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                </div>
+                <div class="proyecto fade-in-up delay-400 delay-600">
+                    <h3>Detección de Sargazo con IA</h3>
+                    <p>Proyecto de detección automática de sargazo mediante redes neuronales convolucionales, desarrollado como parte del programa Samsung Innovation Campus en Ciencia de Datos.</p>
+                    <div class="tecnologias">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>OpenCV</span>
+                        <span>Jupyter</span>
+                    </div>
+                    <a href="https://github.com/MichellPolicarpio/DeteccionSargazoSIC" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                </div>
+                <div class="proyecto fade-in-up delay-600 delay-800">
+                    <h3>Sistema de Gestión Académica</h3>
+                    <p>Aplicación de escritorio desarrollada con Python y Tkinter que permite administrar información académica. Se conecta con MongoDB Atlas para almacenar y gestionar datos de estudiantes.</p>
+                    <div class="tecnologias">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>MongoDB</span>
+                        <span>Atlas</span>
+                    </div>
+                    <a href="https://github.com/MichellPolicarpio/SistemaGestionAcademica-Tkinter" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                </div>
+                <div class="proyecto fade-in-up delay-800 delay-1000">
+                    <h3>Juegos para Apple Watch</h3>
+                    <p>Colección de juegos optimizados para Apple Watch: Tic Tac Toe clásico y Cohete Sideral (juego espacial arcade). Interfaz minimalista con controles táctiles intuitivos.</p>
+                    <div class="tecnologias">
+                        <span>Swift</span>
+                        <span>SwiftUI</span>
+                        <span>watchOS</span>
+                        <span>GameKit</span>
+                    </div>
+                    <a href="https://github.com/MichellPolicarpio/TicTacToe-AppleWatch" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                </div>
+                <div class="proyecto fade-in-up delay-1000 delay-1200">
+                    <h3>Juego Avioneta en OpenGL</h3>
+                    <p>Videojuego de avioneta esquiva obstáculos desarrollado en C utilizando OpenGL. El jugador controla una avioneta a través de terreno hostil, evadiendo obstáculos y recolectando municiones.</p>
+                    <div class="tecnologias">
+                        <span>C++</span>
+                        <span>OpenGL</span>
+                        <span>GLUT</span>
+                        <span>Game Dev</span>
+                    </div>
+                    <a href="https://github.com/MichellPolicarpio/Juego-Avioneta-Sideral-En-OpenGL-Lenguaje-C" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="contacto">
+            <div class="container">
+            <div class="titulo-centrado">
+                <h2 class="fade-in-up">Contacto</h2>
+                    </div>
+            <p>¿Tienes un proyecto en mente? ¡Hablemos sobre cómo puedo ayudarte a alcanzar tus objetivos de desarrollo!</p>
+            
+            <div class="contacto-beneficios">
+                <div class="beneficio fade-in-right delay-0 delay-100">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Soluciones a medida</h4>
+                    <p>Desarrollo adaptado exactamente a tus necesidades específicas</p>
+                    </div>
+                <div class="beneficio fade-in-left delay-200">
+                    <i class="fas fa-code"></i>
+                    <h4>Tecnología moderna</h4>
+                    <p>Implementaciones con las últimas tecnologías del mercado</p>
+                    </div>
+                <div class="beneficio fade-in-right delay-400 delay-300">
+                    <i class="fas fa-comments"></i>
+                    <h4>Comunicación constante</h4>
+                    <p>Seguimiento y actualización durante todo el proceso</p>
+                </div>
+            </div>
+            
+            <form id="contactForm" action="./php/procesar_formulario.php" method="POST" class="form-contacto fade-in-up delay-300">
+                <h5>Cuéntame sobre tu proyecto</h5>
+                <div class="form-grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required="">
+                </div>
+                <div class="form-grupo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required="">
+                </div>
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto, objetivos y plazos..." required=""></textarea>
+                </div>
+                <div class="mensaje-respuesta" style="display:none;"></div>
+                <button type="submit" class="btn-enviar">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+                <p class="form-disclaimer">Al enviar este formulario, recibirás una respuesta en menos de 24 horas hábiles.</p>
+            </form>
+            
+            <div class="contacto-info">
+                <div class="scale-in delay-0 delay-100">
+                    <i class="fas fa-envelope"></i>
+                    <a href="#" id="reveal-email" onclick="enviarCorreo(event)">Contactar por email</a>
+                    </div>
+                <div class="scale-in delay-100 delay-200">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/michell-alexis-policarpio-moran-332568348/" target="_blank" rel="noopener">linkedin.com/in/michell-policarpio</a>
+                </div>
+                <div class="scale-in delay-200 delay-300">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/MichellPolicarpio" target="_blank" rel="noopener">github.com/MichellPolicarpio</a>
+                </div>
+                <div class="scale-in delay-300 delay-400">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+522291360054">+52 229 136 0054</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+            <div class="footer-content">
+            <div class="footer-column fade-in-up delay-0 delay-100">
+                <div class="footer-logo">
+                    <img src="assets/img/Michell.png" alt="Logo Michell Policarpio">
+                    <div class="footer-about">
+                        <p>Desarrollador Full Stack especializado en desarrollo iOS, análisis de datos y soluciones web profesionales. Estudiante de Ingeniería en Informática en la Universidad Veracruzana.</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/michell-alexis-policarpio-moran-332568348/" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/MichellPolicarpio" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon" id="footer-reveal-email" onclick="enviarCorreo(event)" title="Contactar por email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-column fade-in-up delay-100 delay-200">
+                <h3 class="footer-title">Navegación</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column fade-in-up delay-200 delay-300">
+                <h3 class="footer-title">Proyectos</h3>
+                    <ul class="footer-links">
+                    <li><a href="proyectos/gestion-datos.html">Sistema de Gestión de Datos</a></li>
+                    <li><a href="proyectos/app-ios.html">Aplicación iOS de Productividad</a></li>
+                    <li><a href="proyectos/plataforma-analisis.html">Plataforma Web de Análisis</a></li>
+                    <li><a href="proyectos/gestion-academica.html">Sistema de Gestión Académica</a></li>
+                    </ul>
+            </div>
+            
+            <div class="footer-column fade-in-up delay-300 delay-400">
+                <h3 class="footer-title">Contacto</h3>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>michellpolicarpio@gmail.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+52 229 136 0054</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Veracruz, México</span>
+                </div>
+            </div>
+        </div>
+        
+            <div class="footer-bottom">
+            <p>© 2025 Michell Policarpio - Todos los derechos reservados. Diseñado y desarrollado con <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <!-- Botón Volver arriba -->
+    <a href="#inicio" class="btn-volver-arriba" aria-label="Volver al inicio" style="display: none; opacity: 0;">⬆</a>
+
+    <!-- Script para el menú móvil -->
+    <script src="assets/js/menu.js?v=1.0.0"></script>
+
+    <!-- Script para animaciones al hacer scroll -->
+    <script src="assets/js/scroll-animations.js?v=1.0.0"></script>
+
+    <!-- Script para animaciones suaves -->
+    <script src="assets/js/main.js?v=1.0.2"></script>
+    
+    <!-- Script para manejar el formulario de contacto -->
+    <script>
+        // Construir mailto dinámicamente para evitar spam
+        function enviarCorreo(event) {
+            event.preventDefault();
+            var correo = 'michellpolicarpio' + '@' + 'gmail.com';
+            var asunto = encodeURIComponent('Consulta desde portfolio');
+            var body = encodeURIComponent('Hola Michell, me gustaría contactarte...');
+            window.location.href = 'mailto:' + correo + '?subject=' + asunto + '&body=' + body;
+        }
+        // Manejo del formulario de contacto
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const form = this;
+                    const formData = new FormData(form);
+                    const botonEnviar = form.querySelector('button[type="submit"]');
+                    const textoOriginal = botonEnviar.innerHTML;
+                    const mensajeElement = form.querySelector('.mensaje-respuesta');
+                    // Deshabilitar el botón y ocultar mensaje anterior
+                    botonEnviar.disabled = true;
+                    mensajeElement.style.display = 'none';
+                    // Enviar formulario con fetch API
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Error en la red o servidor: ' + response.status);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (data.success) {
+                            mensajeElement.className = 'mensaje-respuesta mensaje-exito';
+                            mensajeElement.textContent = data.message || '¡Mensaje enviado! Te responderé pronto.';
+                            mensajeElement.style.display = 'block';
+                            form.reset();
+                            botonEnviar.innerHTML = '¡Mensaje enviado!';
+                            setTimeout(function() {
+                                botonEnviar.innerHTML = textoOriginal;
+                                botonEnviar.disabled = false;
+                            }, 2000);
+                        } else {
+                            mensajeElement.className = 'mensaje-respuesta mensaje-error';
+                            mensajeElement.textContent = data.message || 'Por favor, completa todos los campos requeridos correctamente.';
+                            mensajeElement.style.display = 'block';
+                            botonEnviar.innerHTML = textoOriginal;
+                            botonEnviar.disabled = false;
+                        }
+                    })
+                    .catch(error => {
+                        mensajeElement.className = 'mensaje-respuesta mensaje-error';
+                        mensajeElement.textContent = 'Ha ocurrido un error al enviar el mensaje. Por favor, inténtalo de nuevo.';
+                        mensajeElement.style.display = 'block';
+                        botonEnviar.innerHTML = textoOriginal;
+                        botonEnviar.disabled = false;
+                    });
+                });
+            }
+        });
+    </script>
+
+<div class="menu-overlay"></div></body>
+</html> 
